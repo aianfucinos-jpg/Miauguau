@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto | Miauguau Pet Rescue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/estilo_contacto.css"/>
+  <link rel="stylesheet" href="estilos/estilo_chatbot.css"/>
+</head>
+<body>
+
+  <!-- TopNavBar - Same as index.html -->
+  <header class="top-navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="index.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+        Miauguau
+      </a>
+
+      <nav class="desktop-nav">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="concientizar.html">Concientizacion</a>
+        <a class="nav-link" href="adoptar.html">Adopciones</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="search-bar">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" placeholder="Buscar mascota" class="search-input">
+      </div>
+
+      <button class="btn-adopt-nav">
+        Adoptar Ahora
+      </button>
+
+      <button class="dark-mode-toggle" aria-label="Cambiar modo oscuro">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+
+      <button class="mobile-menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content - Contact specific -->
+  <main class="main-content bg-gradient-soft">
+    <div class="main-content__grid">
+
+      <!-- Left Side: Visual & Direct Contact -->
+      <div class="left-side">
+        <div class="left-side__header">
+          <h1 class="headline">¡Nos encantaría <span>escucharte</span>!</h1>
+          <p class="subtitle">¿Tienes preguntas sobre adopción o voluntariado? Nuestro equipo de amantes de los animales está aquí para ayudarte en cada paso.</p>
+        </div>
+
+        <!-- Direct Contact Info -->
+        <div class="contact-info-grid">
+          <div class="contact-info-card">
+            <div class="contact-info-icon contact-info-icon--primary">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+              <p class="contact-info-label">Escríbenos</p>
+              <p class="contact-info-value">Miauguau@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-info-card">
+            <div class="contact-info-icon contact-info-icon--secondary">
+              <span class="material-symbols-outlined">share</span>
+            </div>
+            <div class="contact-social-row">
+              <a class="contact-social-link" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+              <a class="contact-social-link" href="#"><span class="material-symbols-outlined">video_camera_front</span></a>
+              <span class="contact-social-text">Sigue nuestros rescates</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative Image -->
+        <div class="decorative-image-wrapper">
+          <img
+            alt="Dos perros felices en un campo soleado"
+            class="decorative-image form-shadow"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASh0Fky0Rc477DW_cEL1ba8wwma0j89ZyV7kpEPnKofWSqqDH6TCdYRZafNdNwulhLDFwk2D_WdZHNtR-BvSoUXRRQ44vlaW_7p6EIY9ytHcuPBtiM9RAL1T8fgAzOwkQuYzkx5t-4h-eErzPYHnLwI0fLJOCsg3c0DrZJ-vgA9Fd-JX4k_-Cvq6eNjzgZZy5jOxYNK9frherYm1Ldftezbxv4EgVbIzhNXs0B7dfkK7qloboAdWFXRCS8GzbYp_bmNzpVPvKSXeQ"
+          />
+        </div>
+      </div>
+
+      <!-- Right Side: Contact Form -->
+      <div class="right-side">
+        <div class="form-card form-shadow">
+          <form class="contact-form" id="contactForm" onsubmit="return false;" action="javascript:void(0)">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Nombre</label>
+                <input class="form-input" id="name" name="name" placeholder="Tu nombre completo" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" id="email" name="email" placeholder="hola@ejemplo.com" type="text" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Asunto</label>
+              <select class="form-select" id="subject" name="subject">
+                <option>Consulta General</option>
+                <option>Pregunta sobre Adopción</option>
+                <option>Voluntariado</option>
+                <option>Información de Donaciones</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="message">Mensaje</label>
+              <textarea class="form-textarea" id="message" name="message" placeholder="¿Cómo podemos ayudarte hoy?" rows="4"></textarea>
+            </div>
+            <button class="btn-submit" type="submit">
+              <span class="material-symbols-outlined">send</span>
+              Enviar Mensaje
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Donation Section - Full Width Below Form -->
+      <div class="donation-section reveal" style="grid-column: 1 / -1;">
+        <div class="section-header" style="text-align:center; align-items:center;">
+          <span class="badge">Donaciones</span>
+          <h2 class="section-title">Apoya nuestra misión</h2>
+          <p class="section-description" style="margin:0 auto;">Tu contribución ayuda a rescatar, alimentar y cuidar a más animales que lo necesitan.</p>
+        </div>
+        <div class="donation-grid">
+          <div class="donation-card">
+            <p class="donation-card__amount">$500</p>
+            <p class="donation-card__label">Alimento semanal</p>
+            <p class="donation-card__desc">Cubre la alimentación de un animal por una semana</p>
+          </div>
+          <div class="donation-card donation-card--selected">
+            <p class="donation-card__amount">$1,000</p>
+            <p class="donation-card__label">Vacunación completa</p>
+            <p class="donation-card__desc">Financia el esquema de vacunación de un rescatado</p>
+          </div>
+          <div class="donation-card">
+            <p class="donation-card__amount">$2,500</p>
+            <p class="donation-card__label">Esterilización</p>
+            <p class="donation-card__desc">Cubre la cirugía de esterilización de una mascota</p>
+          </div>
+        </div>
+        <button class="donation-btn">
+          <span class="material-symbols-outlined" style="font-size:18px; vertical-align:middle;">favorite</span>
+          Donar Ahora
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer - Same as index.html -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="footer-logo" href="index.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+        Miauguau
+      </a>
+      <p class="footer-copyright">&copy; 2026 Miauguau. Todos los derechos reservados.</p>
+    </div>
+    <nav class="footer-nav">
+      <a class="footer-link" href="https://instagram.com" target="_blank">Instagram</a>
+      <a class="footer-link" href="mailto:Miauguau@gmail.com">Email</a>
+    </nav>
+  </footer>
+
+  <script src="JS/main.js"></script>
+  <script src="JS/contacto.js"></script>
+  <script src="JS/chatbot.js"></script>
+</body>
+</html>
