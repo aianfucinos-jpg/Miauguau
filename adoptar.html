@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adopciones | Miauguau Pet Rescue</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/estilo_adoptar.css">
+  <link rel="stylesheet" href="estilos/estilo_chatbot.css">
+</head>
+<body>
+
+  <!-- TopNavBar - Same as index.html -->
+  <header class="top-navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="index.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+        Miauguau
+      </a>
+
+      <nav class="desktop-nav">
+        <a class="nav-link" href="index.html">Inicio</a>
+        <a class="nav-link" href="concientizar.html">Concientizacion</a>
+        <a class="nav-link nav-link--active" href="adoptar.html">Adopciones</a>
+        <a class="nav-link" href="contacto.html">Contacto</a>
+      </nav>
+
+      <div class="search-bar">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" placeholder="Buscar mascota" class="search-input">
+      </div>
+
+      <button class="btn-adopt-nav">
+        Adoptar Ahora
+      </button>
+
+      <button class="mobile-menu-btn">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Content - Adoptions Page -->
+  <main class="main-content">
+    <div class="page-container">
+
+      <!-- Section Header -->
+      <div class="section-header reveal">
+        <span class="badge">Adopciones</span>
+        <h1 class="section-title">Encuentra a tu nuevo mejor amigo</h1>
+        <p class="section-description">Cada uno de nuestros animales rescatados espera una segunda oportunidad. Explora nuestras mascotas disponibles y comienza el proceso de adopción para darles el hogar amoroso que merecen.</p>
+      </div>
+
+      <!-- Filter Bar -->
+      <div class="filter-bar reveal reveal--delay-1">
+        <button class="filter-chip filter-chip--active">Todos</button>
+        <button class="filter-chip">Perros</button>
+        <button class="filter-chip">Gatos</button>
+        <button class="filter-chip">Cachorros</button>
+        <button class="filter-chip">Adultos</button>
+        <button class="filter-chip">Urgentes</button>
+      </div>
+
+      <!-- Pet Cards Grid -->
+      <div class="info-grid">
+
+        <!-- Pet Card 1: Luna -->
+        <div class="pet-card reveal">
+          <img
+            alt="Luna, perro de 2 años, tamaño mediano"
+            class="pet-card__image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBhgKRcJ1xU7n9vhDFVDnVvXhKp_FHB1bJ1XLJIKoK7GMNXvDY9hGZ-Pi7v4S6qxBN5HOZ_3IrP2U2fnuE_Qfmf0_D6Dh0DcAw6z_NjOqzx9K8lmTD1AiO5GggwwFM4E8KXRV_Yhqjz_o-LVmEMPGsx9w5KBNxz5rIvFcFMCqXBBPoc1Ab"
+          >
+          <div class="pet-card__body">
+            <h3 class="pet-card__name">Luna</h3>
+            <p class="pet-card__info">Perro &middot; 2 años &middot; Hembra &middot; Tamaño Mediano</p>
+            <div class="pet-card__tags">
+              <span class="pet-card__tag pet-card__tag--new">Nuevo</span>
+              <span class="pet-card__tag">Manso</span>
+            </div>
+            <button class="pet-card__adopt-btn">Adoptar</button>
+          </div>
+        </div>
+
+        <!-- Pet Card 2: Max -->
+        <div class="pet-card reveal reveal--delay-1">
+          <img
+            alt="Max, perro de 4 años, tamaño grande"
+            class="pet-card__image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7FZ5cq_3gGy4OQ1H0I1Lh4oBbkpFG1zZg9qfDCm3kZLA1b0JzMNMmRxgVbT1S5gTgZ5q_0wZGOFUHsK4IF3BXxC7qwJJ0E7Px3K2U1h2AJnFcAyP9FNqNgKHxRp9nH8Ix0zFGwMF2LMWOHVIaiHdYyQQrKHCbsq_3"
+          >
+          <div class="pet-card__body">
+            <h3 class="pet-card__name">Max</h3>
+            <p class="pet-card__info">Perro &middot; 4 años &middot; Macho &middot; Tamaño Grande</p>
+            <div class="pet-card__tags">
+              <span class="pet-card__tag pet-card__tag--urgent">Urgente</span>
+              <span class="pet-card__tag">Vacunado</span>
+            </div>
+            <button class="pet-card__adopt-btn">Adoptar</button>
+          </div>
+        </div>
+
+        <!-- Pet Card 3: Mía -->
+        <div class="pet-card reveal reveal--delay-2">
+          <img
+            alt="Mía, gata de 1 año, tamaño pequeño"
+            class="pet-card__image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0FxGVDi_VqZ6VZQBB5lGO3PnXRq1hIu4jNdER2x2O0MNlU3p1u_vB6uJCNyTJjWsrHOGmTzxQkNYrY2uyY_jgHNAvJXOtIYtO8QOMR6TRVyNMn0gMq2UoLBqWmnOmOyODQbB1zAi_FKIjsYIlV7XqZ8FBSpS8q7G"
+          >
+          <div class="pet-card__body">
+            <h3 class="pet-card__name">Mía</h3>
+            <p class="pet-card__info">Gata &middot; 1 año &middot; Hembra &middot; Tamaño Pequeño</p>
+            <div class="pet-card__tags">
+              <span class="pet-card__tag pet-card__tag--new">Nuevo</span>
+              <span class="pet-card__tag">Esterilizada</span>
+            </div>
+            <button class="pet-card__adopt-btn">Adoptar</button>
+          </div>
+        </div>
+
+        <!-- Pet Card 4: Thor -->
+        <div class="pet-card reveal">
+          <img
+            alt="Thor, perro de 3 años, tamaño grande"
+            class="pet-card__image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1qY92WhympcovTg8YoIKHXUlU6nSEUNDQQULew6gaGPwlhOPohb_Gc2fCAym64JXyiFkuGTbJxuegeETasam_okAQNX1HUIXZH1zqgwXJNv9xcIZunQBtAQjEM37p1MDJmznVsHgMTgL_4UMch7bC7nOA-D4wf6T-UX7HmfUDQIzgOnMZe2145hS89-6yyGmi0Ugf_P3zWGisy80rT0g8o9et03dbbVhKgo3XxbWP3sYzzwLnnS8CFtPeD9Z0dn_aTeFgF5x3QM"
+          >
+          <div class="pet-card__body">
+            <h3 class="pet-card__name">Thor</h3>
+            <p class="pet-card__info">Perro &middot; 3 años &middot; Macho &middot; Tamaño Grande</p>
+            <div class="pet-card__tags">
+              <span class="pet-card__tag">Adiestrado</span>
+              <span class="pet-card__tag">Juguetón</span>
+            </div>
+            <button class="pet-card__adopt-btn">Adoptar</button>
+          </div>
+        </div>
+
+        <!-- Pet Card 5: Kira -->
+        <div class="pet-card reveal reveal--delay-1">
+          <img
+            alt="Kira, gata de 2 años, tamaño mediano"
+            class="pet-card__image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuASh0Fky0Rc477DW_cEL1ba8wwma0j89ZyV7kpEPnKofWSqqDH6TCdYRZafNdNwulhLDFwk2D_WdZHNtR-BvSoUXRRQ44vlaW_7p6EIY9ytHcuPBtiM9RAL1T8fgAzOwkQuYzkx5t-4h-eErzPYHnLwI0fLJOCsg3c0DrZJ-vgA9Fd-JX4k_-Cvq6eNjzgZZy5jOxYNK9frherYm1Ldftezbxv4EgVbIzhNXs0B7dfkK7qloboAdWFXRCS8GzbYp_bmNzpVPvKSXeQ"
+          >
+          <div class="pet-card__body">
+            <h3 class="pet-card__name">Kira</h3>
+            <p class="pet-card__info">Gata &middot; 2 años &middot; Hembra &middot; Tamaño Mediano</p>
+            <div class="pet-card__tags">
+              <span class="pet-card__tag pet-card__tag--urgent">Urgente</span>
+              <span class="pet-card__tag">Cariñosa</span>
+            </div>
+            <button class="pet-card__adopt-btn">Adoptar</button>
+          </div>
+        </div>
+
+        <!-- Pet Card 6: Rocky -->
+        <div class="pet-card reveal reveal--delay-2">
+          <img
+            alt="Rocky, perro de 5 años, tamaño mediano"
+            class="pet-card__image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAU1qY92WhympcovTg8YoIKHXUlU6nSEUNDQQULew6gaGPwlhOPohb_Gc2fCAym64JXyiFkuGTbJxuegeETasam_okAQNX1HUIXZH1zqgwXJNv9xcIZunQBtAQjEM37p1MDJmznVsHgMTgL_4UMch7bC7nOA-D4wf6T-UX7HmfUDQIzgOnMZe2145hS89-6yyGmi0Ugf_P3zWGisy80rT0g8o9et03dbbVhKgo3XxbWP3sYzzwLnnS8CFtPeD9Z0dn_aTeFgF5x3QM"
+          >
+          <div class="pet-card__body">
+            <h3 class="pet-card__name">Rocky</h3>
+            <p class="pet-card__info">Perro &middot; 5 años &middot; Macho &middot; Tamaño Mediano</p>
+            <div class="pet-card__tags">
+              <span class="pet-card__tag">Adulto</span>
+              <span class="pet-card__tag">Tranquilo</span>
+            </div>
+            <button class="pet-card__adopt-btn">Adoptar</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner reveal">
+        <h2 class="cta-banner__title">¿No encuentras lo que buscas?</h2>
+        <p class="cta-banner__text">Tenemos muchos más amigos esperando un hogar. Contáctanos y te ayudaremos a encontrar tu compañero ideal.</p>
+        <a class="cta-banner__btn" href="contacto.html">Contáctanos</a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer - Same as index.html -->
+  <footer class="site-footer">
+    <div class="footer-brand">
+      <a class="footer-logo" href="index.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+        Miauguau
+      </a>
+      <p class="footer-copyright">&copy; 2026 Miauguau. Todos los derechos reservados.</p>
+    </div>
+    <nav class="footer-nav">
+      <a class="footer-link" href="https://instagram.com" target="_blank">Instagram</a>
+      <a class="footer-link" href="mailto:Miauguau@gmail.com">Email</a>
+    </nav>
+  </footer>
+
+  <script src="JS/main.js"></script>
+  <script src="JS/chatbot.js"></script>
+</body>
+</html>
