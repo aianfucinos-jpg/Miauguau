@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html class="light" lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Miauguau — Rescatamos, cuidamos y encontramos hogares amorosos para animales perdidos o abandonados. Adoptá, ayudá, sumate." />
+  <title>Miauguau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/estilo.css">
+  <link rel="stylesheet" href="estilos/estilo_chatbot.css">
+  <link rel="stylesheet" href="estilos/estilo_cultui.css">
+</head>
+<body>
+
+
+  
+  <header class="top-navbar">
+    <div class="navbar-inner">
+      <a class="logo" href="#/" data-nav="home" aria-label="Miauguau inicio">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+        Miauguau
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegación principal">
+        <a class="nav-link nav-link--active" href="#/" data-nav="home">Inicio</a>
+        <a class="nav-link" href="#/concientizar" data-nav="concientizar">Concientización</a>
+        <a class="nav-link" href="#/adoptar" data-nav="adoptar">Adopciones</a>
+        <a class="nav-link" href="#/contacto" data-nav="contacto">Contacto</a>
+      </nav>
+
+      <div class="search-bar" role="search">
+        <span class="material-symbols-outlined search-icon">search</span>
+        <input type="text" placeholder="Buscar mascota..." class="search-input" aria-label="Buscar mascota">
+      </div>
+
+      <button class="btn-adopt-nav" data-nav="adoptar" type="button">Adoptar Ahora</button>
+
+      <button class="dark-mode-toggle" type="button" aria-label="Cambiar modo oscuro">
+        <span class="material-symbols-outlined">dark_mode</span>
+      </button>
+
+      <button class="mobile-menu-btn" type="button" aria-label="Abrir menú">
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== MAIN ===================== -->
+  <main class="main-content">
+
+    <!-- ============== PAGE: HOME ============== -->
+    <div data-page-view="home" class="is-active">
+
+      <!-- HERO -->
+      <section class="hero-section">
+        <div class="hero-bg-decor" aria-hidden="true">
+          <div class="decor-circle decor-circle--primary"></div>
+          <div class="decor-circle decor-circle--tertiary"></div>
+          <div class="decor-circle decor-circle--sage"></div>
+        </div>
+
+        <div class="hero-grid">
+          <div class="hero-text reveal">
+            <div class="hero-text-intro">
+              <span class="badge">Salvá una vida hoy</span>
+              <h1 class="hero-title">
+                Dales el hogar que <em>se merecen</em>
+              </h1>
+            </div>
+            <p class="hero-description">
+              En Miauguau encontramos familias amorosas para animales perdidos o abandonados. Cada adopción es una segunda oportunidad, un gesto que transforma dos vidas.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary" type="button" data-nav="adoptar">
+                <span class="material-symbols-outlined" style="font-size:20px;">pets</span>
+                Adoptar ahora
+              </button>
+              <button class="btn-outline" type="button" data-nav="concientizar">
+                Cómo ayudar
+              </button>
+            </div>
+            <div class="hero-social-proof">
+              <div class="avatar-group">
+                <div class="avatar avatar--secondary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">face</span></div>
+                <div class="avatar avatar--tertiary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span></div>
+                <div class="avatar avatar--primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span></div>
+                <div class="avatar avatar--ink"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">groups</span></div>
+              </div>
+              <div class="social-proof-text">
+                <strong>+200 familias</strong> ya encontraron a su compañero
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-image-col reveal reveal--delay-2">
+            <div class="image-bg-offset" aria-hidden="true"></div>
+            <div class="image-bg-blur" aria-hidden="true"></div>
+            <div class="image-container">
+              <img
+                alt="Perro rescatado feliz y gato sentados juntos, mirando a la cámara con ojos brillantes. Luz natural suave, fondo verde de parque desenfocado."
+                class="hero-image"
+                src="img/hero-pets.png"
+                loading="eager"
+              >
+              <div class="floating-badge">
+                <div class="floating-badge-icon">
+                  <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+                </div>
+                <div>
+                  <p class="floating-badge-title">Listos para un hogar</p>
+                  <p class="floating-badge-subtitle">Conocé a tus nuevos mejores amigos</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- MARQUEE BAND -->
+      <section class="marquee-band" aria-hidden="true">
+        <div class="marquee-track">
+          <span class="marquee-item">Adoptá, no compres <span class="material-symbols-outlined">pets</span></span>
+          <span class="marquee-item">Cada huella cuenta <span class="material-symbols-outlined">favorite</span></span>
+          <span class="marquee-item">Salvá una vida <span class="material-symbols-outlined">volunteer_activism</span></span>
+          <span class="marquee-item">Adoptá, no compres <span class="material-symbols-outlined">pets</span></span>
+          <span class="marquee-item">Cada huella cuenta <span class="material-symbols-outlined">favorite</span></span>
+          <span class="marquee-item">Salvá una vida <span class="material-symbols-outlined">volunteer_activism</span></span>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section class="stats-section reveal">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <p class="stat-number" data-count="500" data-suffix="+">500+</p>
+            <p class="stat-label">Mascotas rescatadas</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="200" data-suffix="+">200+</p>
+            <p class="stat-label">Familias felices</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="50" data-suffix="+">50+</p>
+            <p class="stat-label">Voluntarios activos</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="98" data-suffix="%">98%</p>
+            <p class="stat-label">Tasa de adopción</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- HOW IT WORKS -->
+      <section class="section how-it-works">
+        <div class="page-container">
+          <div class="section-header section-header--center reveal">
+            <span class="badge badge--sage">Proceso</span>
+            <h2 class="section-title">¿Cómo funciona la <em>adopción</em>?</h2>
+            <p class="section-description">Un proceso simple y amoroso para conectar mascotas con familias que las necesitan. Sin vueltas, sin trabas, con acompañamiento real.</p>
+          </div>
+        </div>
+        <div class="steps-grid reveal">
+          <div class="step-card">
+            <div class="step-card__number">01</div>
+            <div class="step-card__icon card-icon card-icon--primary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span>
+            </div>
+            <h3 class="step-card__title">Explorá</h3>
+            <p class="step-card__text">Navegá nuestras mascotas disponibles y encontrá a tu compañero ideal. Filtrá por tamaño, edad y carácter.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__number">02</div>
+            <div class="step-card__icon card-icon card-icon--secondary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">forum</span>
+            </div>
+            <h3 class="step-card__title">Conocete</h3>
+            <p class="step-card__text">Completá el formulario de contacto y te guiaremos en cada paso. Conversemos sin compromiso.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-card__number">03</div>
+            <div class="step-card__icon card-icon card-icon--tertiary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+            </div>
+            <h3 class="step-card__title">Adoptá</h3>
+            <p class="step-card__text">Dale un hogar amoroso y comenzá una nueva vida juntos. Te acompañamos durante la adaptación.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED STORY -->
+      <section class="featured-story">
+        <div class="featured-grid">
+          <div class="featured-image-wrap reveal">
+            <img
+              alt="Mujer joven abrazando a su perro rescatado en un parque soleado, ambos felices"
+              src="img/featured-story.png"
+              loading="lazy"
+            >
+          </div>
+          <div class="reveal reveal--delay-2">
+            <span class="eyebrow">Historia real</span>
+            <p class="featured-quote">
+              "Llegó a nuestra casa tímida y asustada. Hoy, seis meses después, es la reina del hogar. No imaginamos la vida sin Luna."
+            </p>
+            <div class="featured-attribution">
+              <div class="avatar avatar--primary"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">face</span></div>
+              <div>
+                <p class="featured-name">María García</p>
+                <p class="featured-role">Adoptó a Luna · Marzo 2024</p>
+              </div>
+            </div>
+            <div style="margin-top: 28px;">
+              <button class="btn-ghost" type="button" data-nav="adoptar">
+                Ver más historias
+                <span class="material-symbols-outlined" style="font-size:18px;">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="section testimonials-section">
+        <div class="page-container">
+          <div class="section-header section-header--center reveal">
+            <span class="badge badge--honey">Testimonios</span>
+            <h2 class="section-title">Familias <em>felices</em></h2>
+            <p class="section-description">Historias reales de familias que encontraron a su compañero perfecto a través de Miauguau.</p>
+          </div>
+        </div>
+        <div class="testimonials-grid reveal">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+            </div>
+            <p class="testimonial-card__text">Adoptar a Luna fue la mejor decisión. El equipo de Miauguau nos acompañó en todo el proceso y hoy tenemos una familia completa.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--1">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size:20px;">face</span>
+              </div>
+              <div>
+                <p class="testimonial-card__name">María García</p>
+                <p class="testimonial-card__role">Adoptó a Luna</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+            </div>
+            <p class="testimonial-card__text">Max llegó a nuestra vida cuando más lo necesitábamos. Gracias a Miauguau, encontramos al compañero perfecto para nuestros hijos.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--2">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size:20px;">face</span>
+              </div>
+              <div>
+                <p class="testimonial-card__name">Carlos Rodríguez</p>
+                <p class="testimonial-card__role">Adoptó a Max</p>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars" aria-label="5 estrellas">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; color: var(--honey); font-size:18px;">star</span>
+            </div>
+            <p class="testimonial-card__text">Como voluntaria, he visto de primera mano el increíble trabajo que hacen. Cada mascota recibe el cuidado y amor que merece.</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar testimonial-card__avatar--3">
+                <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1; font-size:20px;">face</span>
+              </div>
+              <div>
+                <p class="testimonial-card__name">Ana Martínez</p>
+                <p class="testimonial-card__role">Voluntaria</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section section--tight">
+        <div class="page-container reveal">
+          <div class="cta-banner">
+            <span class="badge" style="background: rgba(255,251,243,0.1); border-color: rgba(255,251,243,0.2); color: var(--paper);">
+              <span style="background: var(--honey);"></span>&nbsp;
+              Cada adopción cuenta
+            </span>
+            <h2 class="cta-banner__title">¿Listo para cambiar una <em>vida</em>?</h2>
+            <p class="cta-banner__text">Cada adopción es una segunda oportunidad. Explorá nuestras mascotas disponibles y encontrá a tu nuevo mejor amigo hoy.</p>
+            <button class="cta-banner__btn" type="button" data-nav="adoptar">
+              <span class="material-symbols-outlined" style="font-size:20px;">pets</span>
+              Ver mascotas disponibles
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOG -->
+      <section class="section blog-section" style="background: var(--surface-sunken);">
+        <div class="page-container">
+          <div class="section-header reveal" style="flex-direction: row; justify-content: space-between; align-items: flex-end; max-width: 100%; gap: 24px;">
+            <div style="flex: 1; min-width: 280px;">
+              <span class="eyebrow">Del blog</span>
+              <h2 class="section-title">Historias y <em>consejos</em></h2>
+              <p class="section-description">Guías prácticas, historias de adopción y consejos de cuidado para que tu mascota sea feliz.</p>
+            </div>
+            <button class="btn-outline" type="button" data-nav="concientizar" style="flex-shrink: 0;">Ver todos</button>
+          </div>
+        </div>
+        <div class="page-container reveal">
+          <div class="blog-grid">
+            <article class="blog-card">
+              <div class="blog-card__image-wrap">
+                <img src="img/luna.png" alt="Perro feliz en su nuevo hogar" loading="lazy">
+                <span class="blog-card__category">Adopción</span>
+              </div>
+              <div class="blog-card__body">
+                <p class="blog-card__meta">
+                  <span class="material-symbols-outlined" style="font-size:14px;">schedule</span>
+                  5 min de lectura
+                </p>
+                <h3 class="blog-card__title">Los primeros 30 días: guía para adaptar a tu mascota</h3>
+                <p class="blog-card__excerpt">Consejos prácticos para que la transición del refugio a tu hogar sea suave y amorosa.</p>
+                <a class="blog-card__link" href="#/concientizar" data-nav="concientizar">
+                  Leer más
+                  <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-card__image-wrap">
+                <img src="img/kira.png" alt="Gato recibiendo cuidados veterinarios" loading="lazy">
+                <span class="blog-card__category">Salud</span>
+              </div>
+              <div class="blog-card__body">
+                <p class="blog-card__meta">
+                  <span class="material-symbols-outlined" style="font-size:14px;">schedule</span>
+                  7 min de lectura
+                </p>
+                <h3 class="blog-card__title">Vacunas y esterilización: todo lo que necesitás saber</h3>
+                <p class="blog-card__excerpt">Por qué son esenciales, cuándo aplicarlas y cómo cuidar a tu mascota después.</p>
+                <a class="blog-card__link" href="#/concientizar" data-nav="concientizar">
+                  Leer más
+                  <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+            <article class="blog-card">
+              <div class="blog-card__image-wrap">
+                <img src="img/featured-story.png" alt="Voluntaria paseando perros rescatados" loading="lazy">
+                <span class="blog-card__category">Voluntariado</span>
+              </div>
+              <div class="blog-card__body">
+                <p class="blog-card__meta">
+                  <span class="material-symbols-outlined" style="font-size:14px;">schedule</span>
+                  4 min de lectura
+                </p>
+                <h3 class="blog-card__title">Cómo ser voluntario: 10 formas de ayudar desde casa</h3>
+                <p class="blog-card__excerpt">No necesitás ir al refugio para marcar la diferencia. Descubrí cómo aportar.</p>
+                <a class="blog-card__link" href="#/concientizar" data-nav="concientizar">
+                  Leer más
+                  <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- NEWSLETTER -->
+      <section class="newsletter">
+        <div class="newsletter-inner">
+          <div class="reveal">
+            <span class="eyebrow">Mantente al tanto</span>
+            <h2 class="newsletter-title">Historias, campañas y <em>nuevos amigos</em> en tu correo</h2>
+            <p class="newsletter-text">Una vez al mes, te enviamos historias de adopción, consejos de cuidado y oportunidades para ayudar. Sin spam, prometido.</p>
+          </div>
+          <div class="reveal reveal--delay-2">
+            <form class="newsletter-form" id="newsletterForm" autocomplete="off">
+              <span class="material-symbols-outlined" style="color: var(--ink-mute); font-size:20px;">mail</span>
+              <input type="email" class="newsletter-input" id="newsletterEmail" placeholder="tu@email.com" aria-label="Email para newsletter" required>
+              <button type="submit" class="newsletter-submit">
+                Suscribirme
+                <span class="material-symbols-outlined" style="font-size:16px;">arrow_forward</span>
+              </button>
+            </form>
+            <p class="newsletter-note">
+              <span class="material-symbols-outlined" style="font-size:14px;">lock</span>
+              Nunca compartimos tu email. Cancela cuando quieras.
+            </p>
+            <div id="newsletterSuccess" hidden></div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /page: home -->
+
+
+    <!-- ============== PAGE: CONCIENTIZAR ============== -->
+    <div data-page-view="concientizar">
+
+      <section class="conciencia-hero">
+        <div class="conciencia-hero__decor" aria-hidden="true">
+          <div class="decor-circle decor-circle--primary"></div>
+          <div class="decor-circle decor-circle--tertiary"></div>
+        </div>
+        <div class="page-container">
+          <div class="section-header section-header--center reveal">
+            <span class="badge">Concientización</span>
+            <h1 class="section-title" style="font-size: clamp(2.4rem, 5.5vw, 4.2rem);">Cada mascota merece una <em>segunda oportunidad</em></h1>
+            <p class="section-description">La concientización es el primer paso para generar un cambio real. Informar sobre el abandono, el maltrato y la importancia de la adopción responsable salva vidas y transforma comunidades.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-section reveal">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <p class="stat-number" data-count="500" data-suffix="+">500+</p>
+            <p class="stat-label">Mascotas rescatadas</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="200" data-suffix="+">200+</p>
+            <p class="stat-label">Familias felices</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="50" data-suffix="+">50+</p>
+            <p class="stat-label">Voluntarios activos</p>
+          </div>
+          <div class="stat-card">
+            <p class="stat-number" data-count="98" data-suffix="%">98%</p>
+            <p class="stat-label">Tasa de adopción</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="page-container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Temas clave</span>
+            <h2 class="section-title">Temas de <em>concientización</em></h2>
+            <p class="section-description">Conocer es el primer paso para actuar. Informate sobre los temas más urgentes que enfrentan las mascotas en nuestro país.</p>
+          </div>
+        </div>
+        <div class="info-grid reveal">
+          <div class="card">
+            <div class="card-icon card-icon--primary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+            </div>
+            <h3 class="card-title">Abandono callejero</h3>
+            <p class="card-text">Miles de animales son abandonados cada año en las calles, expuestos al hambre, enfermedades y peligros. Es fundamental denunciar y educar para prevenir esta situación.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon card-icon--secondary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">vaccines</span>
+            </div>
+            <h3 class="card-title">Esterilización</h3>
+            <p class="card-text">La esterilización es clave para controlar la sobrepoblación animal y reducir el número de mascotas en situación de calle. Es un acto de responsabilidad y amor.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon card-icon--tertiary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+            </div>
+            <h3 class="card-title">Adopción responsable</h3>
+            <p class="card-text">Adoptar es un compromiso de por vida. Implica brindar alimento, salud, amor y un hogar seguro. No adoptes por impulso, adoptá con responsabilidad.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon card-icon--primary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">shield</span>
+            </div>
+            <h3 class="card-title">Maltrato animal</h3>
+            <p class="card-text">El maltrato animal es un delito. Si conocés o presencias algún caso, no guardes silencio. Denunciá y contribuí a crear una cultura de respeto hacia los animales.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon card-icon--secondary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">school</span>
+            </div>
+            <h3 class="card-title">Educación</h3>
+            <p class="card-text">La educación es la herramienta más poderosa para el cambio. Enseñar a las nuevas generaciones sobre el respeto y cuidado animal garantiza un futuro mejor.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon card-icon--tertiary">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">volunteer_activism</span>
+            </div>
+            <h3 class="card-title">Voluntariado</h3>
+            <p class="card-text">Ser voluntario marca la diferencia en la vida de cientos de animales. Tu tiempo y dedicación son valiosos para el rescate, rehabilitación y socialización de mascotas.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" style="background: var(--surface-sunken);">
+        <div class="page-container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Nuestro proceso</span>
+            <h2 class="section-title">Del rescate al <em>hogar</em></h2>
+            <p class="section-description">Cada paso está diseñado para garantizar el bienestar de cada mascota.</p>
+          </div>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <h3 class="timeline-item__title">Rescate</h3>
+            <p class="timeline-item__text">Nuestro equipo rescata a animales en situación de calle, brindándoles seguridad y esperanza desde el primer momento.</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="timeline-item__title">Rehabilitación</h3>
+            <p class="timeline-item__text">Brindamos atención veterinaria y cuidado integral para que cada mascota se recupere física y emocionalmente.</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="timeline-item__title">Adopción</h3>
+            <p class="timeline-item__text">Encontramos hogares amorosos para cada mascota, asegurando una compatibilidad real entre la familia y el animal.</p>
+          </div>
+          <div class="timeline-item">
+            <h3 class="timeline-item__title">Seguimiento</h3>
+            <p class="timeline-item__text">Acompañamos a las familias en el proceso de adaptación, resolviendo dudas y asegurando el bienestar del animal.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="section">
+        <div class="page-container">
+          <div class="section-header section-header--center reveal">
+            <span class="badge badge--sage">Galería</span>
+            <h2 class="section-title">Momentos que <em>nos mueven</em></h2>
+            <p class="section-description">Un vistazo a la vida en el refugio y a las familias que crecieron gracias a una adopción.</p>
+          </div>
+        </div>
+        <div class="gallery-grid reveal">
+          <div class="gallery-item gallery-item--tall">
+            <img src="img/luna.png" alt="Luna, perra rescatada, jugando en el parque" loading="lazy">
+            <div class="gallery-item__caption"><span class="gallery-item__caption-text">Luna · 2 años</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/mia.png" alt="Mía, gata rescatada, descansando" loading="lazy">
+            <div class="gallery-item__caption"><span class="gallery-item__caption-text">Mía · 1 año</span></div>
+          </div>
+          <div class="gallery-item gallery-item--wide">
+            <img src="img/hero-pets.png" alt="Perro y gato rescatados juntos" loading="lazy">
+            <div class="gallery-item__caption"><span class="gallery-item__caption-text">Compañeros de refugio</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/max.png" alt="Max, perro rescatado, feliz en su nuevo hogar" loading="lazy">
+            <div class="gallery-item__caption"><span class="gallery-item__caption-text">Max · adoptado</span></div>
+          </div>
+          <div class="gallery-item">
+            <img src="img/kira.png" alt="Kira, gata rescatada, mirando a la cámara" loading="lazy">
+            <div class="gallery-item__caption"><span class="gallery-item__caption-text">Kira · urgente</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section">
+        <div class="page-container">
+          <div class="section-header section-header--center reveal">
+            <span class="badge">Preguntas frecuentes</span>
+            <h2 class="section-title">Resolvemos tus <em>dudas</em></h2>
+            <p class="section-description">Las preguntas más comunes sobre adopción, rescate y cómo podés ayudar.</p>
+          </div>
+        </div>
+        <div class="faq-list reveal">
+          <div class="faq-item">
+            <button class="faq-item__question" type="button">
+              ¿Cuánto cuesta adoptar una mascota?
+              <span class="material-symbols-outlined faq-item__icon">expand_more</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>La adopción tiene un costo simbólico que cubre la vacunación, esterilización y microchip de la mascota. Este monto varía según el animal y está muy por debajo del costo real de estos servicios.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" type="button">
+              ¿Qué requisitos necesito para adoptar?
+              <span class="material-symbols-outlined faq-item__icon">expand_more</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Necesitás ser mayor de edad, contar con un espacio seguro para la mascota, comprometerte con su cuidado integral y completar nuestro formulario de adopción. Realizamos una visita previa al hogar.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" type="button">
+              ¿Puedo devolver una mascota si no me adapto?
+              <span class="material-symbols-outlined faq-item__icon">expand_more</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sí, contamos con un período de adaptación de 15 días. Si por alguna razón no podés quedarte con la mascota, la recibimos de vuelta sin problema. Lo más importante es el bienestar del animal.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" type="button">
+              ¿Cómo puedo ser voluntario?
+              <span class="material-symbols-outlined faq-item__icon">expand_more</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Podés registrarte como voluntario a través de nuestra página de contacto. Necesitamos ayuda con paseos, alimentación, limpieza, eventos de adopción y difusión en redes sociales.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" type="button">
+              ¿Las mascotas están vacunadas y esterilizadas?
+              <span class="material-symbols-outlined faq-item__icon">expand_more</span>
+            </button>
+            <div class="faq-item__answer">
+              <p>Sí, todas nuestras mascotas son entregadas con su esquema de vacunación completo, desparasitadas, esterilizadas y con microchip. Además, cuentan con un chequeo veterinario completo.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--tight">
+        <div class="page-container reveal">
+          <div class="cta-banner">
+            <h2 class="cta-banner__title">Unite al <em>cambio</em></h2>
+            <p class="cta-banner__text">Cada pequeño gesto cuenta. Desde compartir información hasta ofrecer un hogar temporal, vos podés hacer la diferencia.</p>
+            <button class="cta-banner__btn" type="button" data-nav="contacto">
+              <span class="material-symbols-outlined" style="font-size:20px;">arrow_forward</span>
+              Involucrate ahora
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /page: concientizar -->
+
+
+    <!-- ============== PAGE: ADOPTAR ============== -->
+    <div data-page-view="adoptar">
+
+      <section class="section">
+        <div class="page-container">
+          <div class="section-header reveal">
+            <span class="badge">Adopciones</span>
+            <h1 class="section-title" style="font-size: clamp(2.4rem, 5.5vw, 4.2rem);">Encontrá a tu nuevo <em>mejor amigo</em></h1>
+            <p class="section-description">Cada uno de nuestros animales rescatados espera una segunda oportunidad. Explorá nuestras mascotas disponibles y comenzá el proceso de adopción para darles el hogar amoroso que merecen.</p>
+          </div>
+        </div>
+
+        <div class="filter-bar reveal reveal--delay-1" role="tablist" aria-label="Filtrar mascotas">
+          <button class="filter-chip filter-chip--active" type="button" data-filter="all">Todos</button>
+          <button class="filter-chip" type="button" data-filter="perros">Perros</button>
+          <button class="filter-chip" type="button" data-filter="gatos">Gatos</button>
+          <button class="filter-chip" type="button" data-filter="cachorros">Cachorros</button>
+          <button class="filter-chip" type="button" data-filter="adultos">Adultos</button>
+          <button class="filter-chip" type="button" data-filter="urgentes">Urgentes</button>
+          <button class="filter-chip filter-chip--fav" type="button" data-filter="favorites">
+            <span class="material-symbols-outlined" style="font-size:16px;">favorite</span>
+            <span class="filter-chip__fav-count">0</span>
+          </button>
+        </div>
+
+        <div class="page-container">
+          <p class="results-counter" id="resultsCounter">Mostrando <strong>6</strong> mascotas</p>
+        </div>
+
+        <div class="info-grid">
+          <div class="pet-card reveal" data-pet-type="perros" data-pet-age="joven" data-pet-urgent="false"><div class="pet-card__image-wrap"><button class="pet-card__fav" type="button" aria-label="Agregar Luna a favoritos" data-pet-name="Luna"><span class="material-symbols-outlined">favorite</span></button><img alt="Luna, perra de 2 años, tamaño mediano" class="pet-card__image" src="img/luna.png" loading="lazy">
+            </div>
+            <div class="pet-card__body">
+              <h3 class="pet-card__name">Luna</h3>
+              <p class="pet-card__info">Perro · 2 años · Hembra · Mediano</p>
+              <div class="pet-card__tags">
+                <span class="pet-card__tag pet-card__tag--new">Nuevo</span>
+                <span class="pet-card__tag">Mansa</span>
+              </div>
+              <button class="pet-card__adopt-btn" type="button">
+                Conocer a Luna
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card reveal reveal--delay-1" data-pet-type="perros" data-pet-age="adulto" data-pet-urgent="true">
+            <div class="pet-card__image-wrap">
+              <button class="pet-card__fav" type="button" aria-label="Agregar Max a favoritos" data-pet-name="Max"><span class="material-symbols-outlined">favorite</span></button>
+              <span class="pet-card__urgent-flag">Urgente</span>
+              <img alt="Max, perro de 4 años, tamaño grande" class="pet-card__image" src="img/max.png" loading="lazy">
+            </div>
+            <div class="pet-card__body">
+              <h3 class="pet-card__name">Max</h3>
+              <p class="pet-card__info">Perro · 4 años · Macho · Grande</p>
+              <div class="pet-card__tags">
+                <span class="pet-card__tag pet-card__tag--urgent">Urgente</span>
+                <span class="pet-card__tag">Vacunado</span>
+              </div>
+              <button class="pet-card__adopt-btn" type="button">
+                Conocer a Max
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card reveal reveal--delay-2" data-pet-type="gatos" data-pet-age="joven" data-pet-urgent="false"><div class="pet-card__image-wrap"><button class="pet-card__fav" type="button" aria-label="Agregar Mía a favoritos" data-pet-name="Mía"><span class="material-symbols-outlined">favorite</span></button><img alt="Mía, gata de 1 año, tamaño pequeño" class="pet-card__image" src="img/mia.png" loading="lazy">
+            </div>
+            <div class="pet-card__body">
+              <h3 class="pet-card__name">Mía</h3>
+              <p class="pet-card__info">Gata · 1 año · Hembra · Pequeño</p>
+              <div class="pet-card__tags">
+                <span class="pet-card__tag pet-card__tag--new">Nuevo</span>
+                <span class="pet-card__tag">Esterilizada</span>
+              </div>
+              <button class="pet-card__adopt-btn" type="button">
+                Conocer a Mía
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card reveal" data-pet-type="perros" data-pet-age="adulto" data-pet-urgent="false"><div class="pet-card__image-wrap"><button class="pet-card__fav" type="button" aria-label="Agregar Thor a favoritos" data-pet-name="Thor"><span class="material-symbols-outlined">favorite</span></button><img alt="Thor, perro de 3 años, tamaño grande" class="pet-card__image" src="img/thor.png" loading="lazy">
+            </div>
+            <div class="pet-card__body">
+              <h3 class="pet-card__name">Thor</h3>
+              <p class="pet-card__info">Perro · 3 años · Macho · Grande</p>
+              <div class="pet-card__tags">
+                <span class="pet-card__tag">Adiestrado</span>
+                <span class="pet-card__tag">Juguetón</span>
+              </div>
+              <button class="pet-card__adopt-btn" type="button">
+                Conocer a Thor
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card reveal reveal--delay-1" data-pet-type="gatos" data-pet-age="adulto" data-pet-urgent="true">
+            <div class="pet-card__image-wrap">
+              <button class="pet-card__fav" type="button" aria-label="Agregar Kira a favoritos" data-pet-name="Kira"><span class="material-symbols-outlined">favorite</span></button>
+              <span class="pet-card__urgent-flag">Urgente</span>
+              <img alt="Kira, gata de 2 años, tamaño mediano" class="pet-card__image" src="img/kira.png" loading="lazy">
+            </div>
+            <div class="pet-card__body">
+              <h3 class="pet-card__name">Kira</h3>
+              <p class="pet-card__info">Gata · 2 años · Hembra · Mediano</p>
+              <div class="pet-card__tags">
+                <span class="pet-card__tag pet-card__tag--urgent">Urgente</span>
+                <span class="pet-card__tag">Cariñosa</span>
+              </div>
+              <button class="pet-card__adopt-btn" type="button">
+                Conocer a Kira
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pet-card reveal reveal--delay-2" data-pet-type="perros" data-pet-age="adulto" data-pet-urgent="false"><div class="pet-card__image-wrap"><button class="pet-card__fav" type="button" aria-label="Agregar Rocky a favoritos" data-pet-name="Rocky"><span class="material-symbols-outlined">favorite</span></button><img alt="Rocky, perro de 5 años, tamaño mediano" class="pet-card__image" src="img/rocky.png" loading="lazy">
+            </div>
+            <div class="pet-card__body">
+              <h3 class="pet-card__name">Rocky</h3>
+              <p class="pet-card__info">Perro · 5 años · Macho · Mediano</p>
+              <div class="pet-card__tags">
+                <span class="pet-card__tag">Adulto</span>
+                <span class="pet-card__tag">Tranquilo</span>
+              </div>
+              <button class="pet-card__adopt-btn" type="button">
+                Conocer a Rocky
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-container reveal" style="margin-top: 64px;">
+          <div class="cta-banner">
+            <h2 class="cta-banner__title">¿No encontrás lo que <em>buscás</em>?</h2>
+            <p class="cta-banner__text">Tenemos muchos más amigos esperando un hogar. Contactanos y te ayudamos a encontrar tu compañero ideal.</p>
+            <button class="cta-banner__btn" type="button" data-nav="contacto">
+              Contactanos
+              <span class="material-symbols-outlined" style="font-size:20px;">arrow_forward</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /page: adoptar -->
+
+
+    <!-- ============== PAGE: CONTACTO ============== -->
+    <div data-page-view="contacto">
+
+      <section class="section">
+        <div class="page-container">
+          <div class="section-header section-header--center reveal">
+            <span class="badge">Contacto</span>
+            <h1 class="section-title" style="font-size: clamp(2.4rem, 5.5vw, 4.2rem);">¡Nos encantaría <em>escucharte</em>!</h1>
+            <p class="section-description">¿Tenés preguntas sobre adopción o voluntariado? Nuestro equipo de amantes de los animales está acá para ayudarte en cada paso.</p>
+          </div>
+        </div>
+
+        <div class="contact-grid reveal">
+          <div class="contact-info-side">
+            <div class="contact-info-card">
+              <div class="contact-info-icon contact-info-icon--primary">
+                <span class="material-symbols-outlined">mail</span>
+              </div>
+              <div>
+                <p class="contact-info-label">Escribinos</p>
+                <p class="contact-info-value">Miauguau@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon contact-info-icon--tertiary">
+                <span class="material-symbols-outlined">schedule</span>
+              </div>
+              <div>
+                <p class="contact-info-label">Horarios</p>
+                <p class="contact-info-value-text">Lun-Vie: 9:00-18:00<br>Sáb: 10:00-14:00</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon contact-info-icon--secondary">
+                <span class="material-symbols-outlined">location_on</span>
+              </div>
+              <div>
+                <p class="contact-info-label">Ubicación</p>
+                <p class="contact-info-value-text">Palermo, Buenos Aires</p>
+              </div>
+            </div>
+            <div class="contact-info-card">
+              <div class="contact-info-icon contact-info-icon--primary">
+                <span class="material-symbols-outlined">share</span>
+              </div>
+              <div class="contact-social-row">
+                <a class="contact-social-link" href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+                <a class="contact-social-link" href="mailto:Miauguau@gmail.com" aria-label="Email"><span class="material-symbols-outlined">alternate_email</span></a>
+                <span class="contact-social-text">Seguinos</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-side">
+            <div class="form-card">
+              <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Nombre</label>
+                    <input class="form-input" id="name" name="name" placeholder="Tu nombre completo" type="text" autocomplete="name" />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email</label>
+                    <input class="form-input" id="email" name="email" placeholder="hola@ejemplo.com" type="email" autocomplete="email" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="subject">Asunto</label>
+                  <select class="form-select" id="subject" name="subject">
+                    <option value="">Seleccioná un asunto</option>
+                    <option>Consulta general</option>
+                    <option>Pregunta sobre adopción</option>
+                    <option>Voluntariado</option>
+                    <option>Denuncia de maltrato</option>
+                    <option>Emergencia animal</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="message">Mensaje</label>
+                  <textarea class="form-textarea" id="message" name="message" placeholder="¿Cómo podemos ayudarte hoy?" rows="5"></textarea>
+                </div>
+                <button class="btn-submit" type="submit">
+                  <span class="material-symbols-outlined">send</span>
+                  Enviar mensaje
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div><!-- /page: contacto -->
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand-col">
+        <a class="footer-logo" href="#/" data-nav="home">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">pets</span>
+          Miauguau
+        </a>
+        <p class="footer-tagline">Rescatamos, cuidamos y encontramos hogares amorosos para animales perdidos o abandonados. Cada adopción es una segunda oportunidad.</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Navegación</p>
+        <div class="footer-col-links">
+          <a class="footer-link" href="#/" data-nav="home"><span class="material-symbols-outlined">arrow_forward</span>Inicio</a>
+          <a class="footer-link" href="#/concientizar" data-nav="concientizar"><span class="material-symbols-outlined">arrow_forward</span>Concientización</a>
+          <a class="footer-link" href="#/adoptar" data-nav="adoptar"><span class="material-symbols-outlined">arrow_forward</span>Adopciones</a>
+          <a class="footer-link" href="#/contacto" data-nav="contacto"><span class="material-symbols-outlined">arrow_forward</span>Contacto</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Ayudá</p>
+        <div class="footer-col-links">
+          <a class="footer-link" href="#/adoptar" data-nav="adoptar"><span class="material-symbols-outlined">pets</span>Adoptar</a>
+          <a class="footer-link" href="#/contacto" data-nav="contacto"><span class="material-symbols-outlined">volunteer_activism</span>Voluntariado</a>
+          <a class="footer-link" href="#/concientizar" data-nav="concientizar"><span class="material-symbols-outlined">home</span>Hogar temporal</a>
+        </div>
+      </div>
+      <div>
+        <p class="footer-col-title">Contacto</p>
+        <div class="footer-col-links">
+          <a class="footer-link" href="mailto:Miauguau@gmail.com"><span class="material-symbols-outlined">mail</span>Miauguau@gmail.com</a>
+          <a class="footer-link" href="#/contacto" data-nav="contacto"><span class="material-symbols-outlined">location_on</span>Palermo, Buenos Aires</a>
+          <a class="footer-link" href="#/contacto" data-nav="contacto"><span class="material-symbols-outlined">schedule</span>Lun-Vie 9-18h</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copyright">© 2026 Miauguau. Todos los derechos reservados. Hecho con <span class="material-symbols-outlined" style="font-size:14px; color: var(--rust-soft); vertical-align: middle;">favorite</span> en Buenos Aires.</p>
+      <div class="footer-socials">
+        <a class="footer-social" href="#" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+        <a class="footer-social" href="mailto:Miauguau@gmail.com" aria-label="Email"><span class="material-symbols-outlined">mail</span></a>
+        <a class="footer-social" href="#" aria-label="Facebook"><span class="material-symbols-outlined">groups</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== SCRIPTS ===================== -->
+  <script src="JS/main.js"></script>
+  <script src="JS/contacto.js"></script>
+  <script src="JS/chatbot.js"></script>
+  <script src="JS/cultui.js"></script>
+</body>
+</html>
